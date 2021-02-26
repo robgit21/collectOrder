@@ -12,20 +12,27 @@
 
 <body>
     <div class="container">
+         
         <div class="forms-container">
             <div class="signin-signup">
                 <form action="#" class="sign-in-form">
+                    <h3>Seite zur Abstimmung und Sammelbestellung </h3>
+                    <br />
                     <h2 class="title">Login</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input type="text" placeholder="Vorname" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nachname" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Passwort" />
                     </div>
                     <input type="submit" value="Login" class="btn solid" />
-                    
+
                 </form>
 
 
@@ -33,7 +40,22 @@
 
 
                 <form action="#" class="sign-up-form">
+
                     <h2 class="title">Neuen Nutzer anlegen</h2>
+
+                    <div class="radio-group"> 
+                        <label class="radio">
+                            <input checked="checked" type="radio" value="female" name="gender" />
+                            Frau
+                            <span></span>
+                        </label> 
+                        <label class="radio">
+                            <input type="radio" value="male" name="gender" />
+                            Herr
+                            <span></span>
+                        </label> 
+                    </div>
+
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="Vorname" />
