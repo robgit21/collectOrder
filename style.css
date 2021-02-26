@@ -6,6 +6,66 @@
     box-sizing: border-box;
 }
 
+
+/*Radiobutton*/
+.radio-group {
+    font-size: 18px;
+    display: flex;
+    align-content: center;
+    
+}
+
+.radio {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    color: #444;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.radio + .radio{
+    margin-left: 20px;
+}
+
+.radio input[type="radio"]{
+    display: none;
+}
+
+    .radio span {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 3px solid rgba(0,97,50,1);
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 7px;
+    }
+
+        .radio span:after {
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: rgba(0,97,50,1);
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+            transition: 300ms ease-in-out 0s;
+        }
+
+.radio input[type="radio"]:checked ~ span:after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/*---Radiobutton---*/
 body,
 input {
     font-family: "Poppins", sans-serif;
